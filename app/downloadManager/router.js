@@ -2,7 +2,7 @@ import Router from 'koa-router';
 import DownloadManager from './DownloadManager';
 
 const router = new Router();
-const downloadManager = new DownloadManager(`https://ahj-download-manager.herokuapp.com/`);
+const downloadManager = new DownloadManager(`https://ahj-download-manager.herokuapp.com`);
 
 router.get('/tickets', downloadManager.getAll.bind(downloadManager));
 
