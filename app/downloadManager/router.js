@@ -1,10 +1,8 @@
 import Router from 'koa-router';
 import DownloadManager from './DownloadManager';
 
-const { PORT } = process.env;
-const port = PORT || 7070;
 const router = new Router();
-const downloadManager = new DownloadManager(`http://localhost:${port}`);
+const downloadManager = new DownloadManager(`https://ahj-download-manager.herokuapp.com/`);
 
 router.get('/tickets', downloadManager.getAll.bind(downloadManager));
 
