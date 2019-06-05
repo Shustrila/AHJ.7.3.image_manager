@@ -137,7 +137,7 @@ class DownloadManager {
     const formImages = this._createFormImages();
     const listImages = this._createListImages();
 
-    this.api = new QueryServer('http://localhost:7070/tickets');
+    this.api = new QueryServer('https://ahj-download-manager.herokuapp.com/tickets');
 
     this._root.appendChild(formImages);
     this._root.appendChild(listImages);
