@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: transparent;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.download-manager {
+    width: 650px;
+}
+.download-manager__form {
+    width: 100%;
+}
+.download-manager__form-button {
+    width: 100%;
+    padding: 0 30%;
+    height: 300px;
+    border: 3px dashed #dddddd;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #dddddd;
+}
+.download-manager__form-file {
+    display: none;
+}
+.download-manager__list-image {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.download-manager__item-image {
+    position: relative;
+    width: 20%;
+    border: 1px solid #333333;
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    list-style: none;
+    border-radius: 5px;
+}
+.download-manager__remove-image {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    right: -15px;
+    top: -15px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.download-manager__image {
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+    background-size: cover;
+}
+
